@@ -1,0 +1,10 @@
+# Notebooks were run on Kaggle (Python 3.11, 2x T4). scripts/reproduce_tables.py needs only
+# numpy, pandas, scipy and scikit-learn. matplotlib is the version used on Kaggle; the other
+# analysis packages are the versions reproduce_tables.py was verified with.
+tensorflow==2.20.*
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.1
+pandas==3.0.6
+matplotlib==3.10.0
+nbformat==5.11.1

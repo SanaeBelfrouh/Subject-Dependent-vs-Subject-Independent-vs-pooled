@@ -1,0 +1,11 @@
+# dataset (download separately, see README)
+data/
+
+# large caches; the only pickle kept is the published k-fold predictions
+*.pkl
+!results/kfold/kfold_preds.pkl
+maps*.pkl
+
+.ipynb_checkpoints/
+__pycache__/
+kaggle.json

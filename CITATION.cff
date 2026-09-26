@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "Subject-dependent, subject-independent, or pooled? What each evaluation regime really measures in EEG imagined-speech decoding"
+type: software
+license: MIT
+repository-code: "https://github.com/belfrouhsanae/bcic2020-evaluation-regimes"
+authors:
+  - family-names: Belfrouh
+    affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
+  - family-names: Salmam
+    affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
+  - family-names: Errattahi
+    affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
+preferred-citation:
+  type: article
+  title: "Subject-dependent, subject-independent, or pooled? What each evaluation regime really measures in EEG imagined-speech decoding"
+  journal: "Journal of Neural Engineering"
+  status: submitted
+  authors:
+    - family-names: Belfrouh
+      affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
+    - family-names: Salmam
+      affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
+    - family-names: Errattahi
+      affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
