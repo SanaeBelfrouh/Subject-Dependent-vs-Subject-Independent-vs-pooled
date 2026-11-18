@@ -34,13 +34,19 @@ This recomputes Tables 1–3 and all reported Wilcoxon tests from the saved pred
 
 ## Full rerun
 
-Run the notebooks in order: `01` → `02` → `03`. `04` is independent.
+Run the notebooks in order: `01` → `02` → `03`. `04` and `05` are independent (`05` reuses the map cache
+of `01` when it is attached).
 
 - `01_paper_results.ipynb` builds the map cache (`maps.pkl`) and trains the three regimes.
 - `02_sd_kfold_ci.ipynb` reads the map cache written by `01`. It needs several GPU hours on a T4, so it
   is checkpointed per (scheme, subject, fold) and resumes where it stopped; it may take several Kaggle sessions.
 - `03_make_figures.ipynb` draws all figures from the outputs of `01` and `02`.
 - `04_band_probe.ipynb` runs the linear probes used in Fig. 9(b).
+- `05_revision_experiments.ipynb` runs the control analyses added in revision (seeded repeats, equal-size
+  pooled model, wider encoders and Euclidean alignment, instruction-block cross-validation, drift and
+  artefact controls, permutation nulls, EEGNet under the three regimes). It reuses the data loading, maps
+  and model of `01`/`02` without changing them, checkpoints every run, and can be resumed across Kaggle
+  sessions; it writes `revision_results.zip`.
 
 Paths: on Kaggle the notebooks use `/kaggle/input` and `/kaggle/working`. Elsewhere, set `BCIC_DATA`
 (dataset folder) and `RESULTS_DIR` (output root); they default to `./data` and `./results`.
