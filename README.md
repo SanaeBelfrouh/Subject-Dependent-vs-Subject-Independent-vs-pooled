@@ -45,8 +45,8 @@ of `01` when it is attached).
 - `05_revision_experiments.ipynb` runs the control analyses added in revision (seeded repeats, equal-size
   pooled model, wider encoders and Euclidean alignment, instruction-block cross-validation, drift and
   artefact controls, permutation nulls, EEGNet under the three regimes). It reuses the data loading, maps
-  and model of `01`/`02` without changing them, checkpoints every run, and can be resumed across Kaggle
-  sessions; it writes `revision_results.zip`.
+  and model of `01`/`02` without changing them, runs each part in a fresh process (one part per GPU),
+  checkpoints every model, and can be resumed across Kaggle sessions; it writes `revision_results.zip`.
 
 Paths: on Kaggle the notebooks use `/kaggle/input` and `/kaggle/working`. Elsewhere, set `BCIC_DATA`
 (dataset folder) and `RESULTS_DIR` (output root); they default to `./data` and `./results`.
