@@ -44,7 +44,7 @@ of `01` when it is attached).
 - `04_band_probe.ipynb` runs the linear probes used in Fig. 9(b).
 - `05_revision_experiments.ipynb` runs the control analyses added in revision (seeded repeats, equal-size
   pooled model, wider encoders and Euclidean alignment, instruction-block cross-validation, drift and
-  artefact controls, permutation nulls, EEGNet under the three regimes). It reuses the data loading, maps
+  artefact controls, pre-cue and slow-component controls, permutation nulls, EEGNet under the three regimes). It reuses the data loading, maps
   and model of `01`/`02` without changing them, runs each part in a fresh process (one part per GPU),
   checkpoints every model, and can be resumed across Kaggle sessions; it writes `revision_results.zip`.
 
