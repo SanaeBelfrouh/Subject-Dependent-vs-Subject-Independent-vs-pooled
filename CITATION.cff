@@ -3,7 +3,6 @@ message: "If you use this code, please cite the paper below."
 title: "Subject-dependent, subject-independent, or pooled? What each evaluation regime really measures in EEG imagined-speech decoding"
 type: software
 license: MIT
-repository-code: "https://github.com/SanaeBelfrouh/Subject-Dependent-vs-Subject-Independent-vs-pooled"
 authors:
   - family-names: Belfrouh
     given-names: "Sanae"
