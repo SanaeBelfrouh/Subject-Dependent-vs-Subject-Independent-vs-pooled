@@ -32,9 +32,6 @@ data/
 ```
 pip install numpy scipy scikit-learn pandas
 python scripts/reproduce_tables.py
-```
-
-```
 python scripts/kfold_tables_from_summary.py
 ```
 
@@ -93,11 +90,11 @@ Table and figure numbers follow the revised manuscript.
 | Paper item | Produced by |
 |---|---|
 | Table 3 (SD / pooled / SI: balanced acc, kappa, weighted F1) | `01_paper_results.ipynb`, `scripts/reproduce_tables.py`; seeded repeats: `05` |
-| Table 4 (SD under the evaluation protocols, 95% CIs) | `02_sd_kfold_ci.ipynb`, `scripts/reproduce_tables.py`; group folds: `05` |
-| Table 5 (per-subject shuffled vs blocked) | `02_sd_kfold_ci.ipynb`, `scripts/reproduce_tables.py` |
+| Table 4 (SD under the evaluation protocols, 95% CIs) | `02_sd_kfold_ci.ipynb`, `scripts/kfold_tables_from_summary.py`; group folds: `05` |
+| Table 5 (per-subject shuffled vs blocked) | `02_sd_kfold_ci.ipynb`, `scripts/kfold_tables_from_summary.py` |
 | Tables 8 and 9 (control analyses, faster dynamics) | `05_revision_experiments.ipynb` (summary CSV files), `scripts/revision_tables.py` |
 | Table A.10 (per subject) | `scripts/revision_tables.py` |
-| Wilcoxon tests of the original analysis | `scripts/reproduce_tables.py` |
+| Wilcoxon tests of the original analysis | `scripts/reproduce_tables.py` (SI vs chance, SD vs SI), `scripts/kfold_tables_from_summary.py` (shuffled vs blocked) |
 | Figs. 1–4 and 6 (pipeline, mask, filmstrip, architecture, class means) | `03_make_figures.ipynb` (needs the dataset) |
 | Fig. 5 (regimes), Fig. 7 (confusion matrices), Fig. 8 (protocols, leakage control) | `03_make_figures.ipynb` |
 | Fig. 9 (design choices) | `03_make_figures.ipynb`; revised drawing: `scripts/fig9_revised.py` |
