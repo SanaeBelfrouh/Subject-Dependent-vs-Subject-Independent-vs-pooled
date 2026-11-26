@@ -3,23 +3,29 @@ message: "If you use this code, please cite the paper below."
 title: "Subject-dependent, subject-independent, or pooled? What each evaluation regime really measures in EEG imagined-speech decoding"
 type: software
 license: MIT
-repository-code: "https://github.com/belfrouhsanae/bcic2020-evaluation-regimes"
+repository-code: "https://github.com/SanaeBelfrouh/Subject-Dependent-vs-Subject-Independent-vs-pooled"
 authors:
   - family-names: Belfrouh
+    given-names: "Sanae"
     affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
   - family-names: Salmam
+    given-names: "Fatima Zahra"
     affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
   - family-names: Errattahi
+    given-names: "Rahhal"
     affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
 preferred-citation:
   type: article
   title: "Subject-dependent, subject-independent, or pooled? What each evaluation regime really measures in EEG imagined-speech decoding"
-  journal: "Journal of Neural Engineering"
+  journal: "Array"
   status: submitted
   authors:
     - family-names: Belfrouh
+      given-names: "Sanae"
       affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
     - family-names: Salmam
+      given-names: "Fatima Zahra"
       affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
     - family-names: Errattahi
+      given-names: "Rahhal"
       affiliation: "LTI, ENSA El Jadida, Université Chouaib Doukkali"
