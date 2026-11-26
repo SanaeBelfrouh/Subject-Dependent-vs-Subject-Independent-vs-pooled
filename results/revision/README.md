@@ -27,7 +27,9 @@ a `revision/` folder with:
 `python scripts/revision_tables.py <folder containing revision/> <out_dir>` and
 `python scripts/fig10_controls.py revision/runs.csv <out_prefix>` read this folder.
 
-The E2 session stopped at its time budget (`status.json`): the pooled runs of every encoder and the SI run
-with Euclidean alignment are complete and are the ones reported; SI with the widest encoder (7 of 15
-subjects) and Euclidean alignment with the widest encoder were not completed and are not reported. The
-25,000-parameter pooled model of the same session (40.5%) is the reference for the wider encoders.
+The E2 session stopped at its time budget (`status.json`). The manuscript reports the pooled runs of the
+wider encoders and the pooled and SI runs with Euclidean alignment, all complete; the 25,000-parameter
+pooled model of the same session (40.5%) is the reference for the wider encoders. SI with the widest
+encoder stopped after 7 of 15 subjects and is not reported. Euclidean alignment combined with the widest
+encoder (pooled, 31.3%, complete) is not reported in the manuscript; it agrees with the 25,000-parameter
+result (32.1%).
