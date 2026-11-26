@@ -34,8 +34,10 @@ pip install numpy scipy scikit-learn pandas
 python scripts/reproduce_tables.py
 ```
 
-This recomputes the three-regime, protocol and leakage tables (Tables 3–5) and the Wilcoxon tests of the
-original analysis from the saved predictions in `results/`.
+This recomputes the three-regime table (Table 3) from the saved predictions in `results/paper/`, and the
+protocol and leakage tables (Tables 4–5) and the Wilcoxon tests of the original analysis from
+`results/kfold/`. The predictions of `results/kfold/` are not included yet, so the script currently stops
+after Table 3.
 
 ## Full rerun
 
