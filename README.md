@@ -34,10 +34,16 @@ pip install numpy scipy scikit-learn pandas
 python scripts/reproduce_tables.py
 ```
 
-This recomputes the three-regime table (Table 3) from the saved predictions in `results/paper/`, and the
-protocol and leakage tables (Tables 4–5) and the Wilcoxon tests of the original analysis from
-`results/kfold/`. The predictions of `results/kfold/` are not included yet, so the script currently stops
-after Table 3.
+```
+python scripts/kfold_tables_from_summary.py
+```
+
+The first script recomputes the three-regime table (Table 3), with kappa and weighted F1, from the
+saved predictions in `results/paper/`, then stops: it also expects per-trial predictions of the 5-fold
+runs (`results/kfold/kfold_preds.pkl`), which were not kept for the run reported in the paper. The
+second script recomputes Tables 4–5 (means, 95% t-intervals) and the Wilcoxon tests from the per-subject
+accuracies of that run, copied to `results/kfold/per_subject_kfold.csv` from the saved output of
+`02_sd_kfold_ci.ipynb` (which also prints its kappa and weighted F1).
 
 ## Full rerun
 
@@ -74,7 +80,7 @@ Notebooks skip work whose outputs already exist, so **point `RESULTS_DIR` at an 
 run**; otherwise `01` reloads the saved predictions and `02` can overwrite `results/kfold/kfold_preds.pkl`.
 
 **Determinism.** In `01` and `02`, data splits are seeded but TensorFlow weight initialisation is not, so a
-full rerun differs by about 1–2 pp; the files in `results/` are the exact runs reported in the paper.
+full rerun differs by about 1–2 pp; the files in `results/` come from the runs reported in the paper.
 Notebook `05` also seeds weight initialisation.
 
 **Mask.** The effective mask keeps 80.7% of the 32×32 grid: pixels within 1.2× the median inter-electrode
